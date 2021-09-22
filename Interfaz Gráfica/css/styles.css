@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-image: #16c5df;
+  background: #757575; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #93edc7,
+    #1cd8d2
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #93edc7,
+    #1cd8d2
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  display: flex;
+  justify-self: center;
+}
+.terminos {
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+.titulo1 {
+  font-weight: 600;
+}
+.margen1 {
+  background-color: white;
+  border-radius: 10px;
+  padding-top: 20px;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.copy{
+    text-align: center;
+    color: rgb(5, 9, 66);
+}
+
+.footer{
+    margin-top: 120px;
+    background-color: white;
+    bottom: 0;
+}

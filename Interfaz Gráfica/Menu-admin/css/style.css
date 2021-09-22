@@ -146,6 +146,7 @@
 .sidebar li a:hover{
   background: #FFF;
 }
+
 .sidebar li a .links_name{
   color: #fff;
   font-size: 15px;
@@ -170,6 +171,7 @@
   font-size: 18px;
   border-radius: 12px;
 }
+
 .sidebar li.profile{
   position: fixed;
   height: 60px;
@@ -267,4 +269,54 @@
 .logo-details img{
   height: 50px;
   width: 50px;
+}
+
+.precio1{
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 10px;
+  width: 100%;
+  margin-left: 100px;
+  border: none;
+  outline: none;
+  height: 30px;
+  border-radius: 6px;
+}
+.pad-1{
+  padding-top: 15px;
+}
+.label1{
+  margin-left: 100px;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+.boton1{
+  margin-top: 15px;
+  padding-left: 15px;
+  padding-right: 10px;
+  width: 100%;
+  margin-left: 100px;
+  border: none;
+  outline: none;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #1d1b31;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor{
+    padding-left: 20px;
+  }
+  .boton1{
+    margin-left: 10px;
+    width: 80%;
+  }
+  .label1{
+    margin-left: 10px;
+  }
+  .precio1{
+    margin-left: 10px;
+    width: 100%;
+  }
 }
