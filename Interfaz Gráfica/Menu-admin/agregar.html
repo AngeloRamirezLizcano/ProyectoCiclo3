@@ -89,20 +89,46 @@
   </div>
   <section class="home-section">
     <!-- esta parte el contenido que se quiere agregar -->
-    <div class="text">Dashboard</div>
+    <div class="text">Registrar Vehiculo</div>
+    <h1 class="registro">Registra el ingreso de cada vehiculo</h1> 
+    
 
-    <h1 class="contenedor">Mira los vehiculos que se encuentran en tu parqueadero</h1>
+    <form>
+      
+      <div class="mb-3 row">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Nombre del propietario">
 
-    <div id="contenedor" class="ag-theme-balham">
+      </div>
+      <div class="mb-3 row">
+        <label for="placa" class="form-label">Placa</label>
+        <input type="text" class="form-control" id="placa" placeholder="Placa del vehiculo">
+      </div>
 
+      <div class="mb-3 row">
+        <label for="modelo" class="form-label">Modelo</label>
+        <input type="text" class="form-control" id="modelo" placeholder="Modelo del vehiculo">
+      </div>
 
-    </div>
-    <p class="contenedor" style="padding-top: 30px;">Número de puestos disponibles: 12/34</p>
-    <p class="contenedor">Dinero recaudado hasta ahora: $00000.000 </p>
+      <div class="mb-3 row">
+        <label for="tipo_vehiculo" class="form-label">Tipo de Vehiculo</label>
+        <select class="form-control form-control-lg">
+          <option>Automovil</option>
+          <option>Motocicleta</option>
+          <option>Bicicleta</option>
+        </select>
+        <br>
+        
+        <div>
 
+          <div class="mb-3">
+            <button type="button" class="btn-registrar">Registrar</button>
+            <div>
+              
+    </form>
 
   </section>
-
+    
 
   <!-- Codigo personalizado -->
 
