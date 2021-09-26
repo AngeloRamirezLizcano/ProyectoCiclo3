@@ -6,8 +6,6 @@
     <meta charset="UTF-8">
     <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-
     <!-- Boxicons CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +22,7 @@
     <div class="sidebar">
         <div class="logo-details">
             <!-- <img src="Dogue.jpg" alt="profileImg"> -->
-            <i class='bx bxl-c-plus-plus icon'></i>
+            <img src="img/logo-02.png" class="icon">
             <!-- <img src="./images.jpg" alt=""> -->
             <div class="logo_name">AppParking</div>
             <i class='bx bx-menu' id="btn"></i>
@@ -72,10 +70,10 @@
             </li>
             <li>
                 <!-- <a href="#">
-         <i class='bx bx-cog' ></i>
-         <span class="links_name">Setting</span>
-       </a>
-       <span class="tooltip">Setting</span> -->
+   <i class='bx bx-cog' ></i>
+   <span class="links_name">Setting</span>
+ </a>
+ <span class="tooltip">Setting</span> -->
             </li>
             <li class="profile">
                 <div class="profile-details">
@@ -85,49 +83,23 @@
                         <div class="job">Admin</div>
                     </div>
                 </div>
-                     <a href="../Iniciosesion.html"><i class='bx bx-log-out' id="log_out"></i></a>
+                <a href="../Iniciosesion.html">     <a href="../Iniciosesion.html"></a><i class='bx bx-log-out' id="log_out"></i></a></a>
             </li>
         </ul>
     </div>
     <section class="home-section">
         <!-- esta parte el contenido que se quiere agregar -->
-        <div class="text">Configuraciones</div>
+        <div class="text">Historial de recaudo</div>
 
-        <h1 class="contenedor">Modifica el precio de cobro de cada uno de los tipos de vehiculos</h1>
-        <h5 class="contenedor">Precio por minuto</h5>
-        <form action="">
-            <div class="row">
-                <div class="col-md-1 pad-1">
-                    <label class="label1">Carro</label>
-                </div>
-                <div class="col-md-2">
-                    <input class="entrada1" type="number" placeholder="Precio carro" min="0" max="1000" step="1"
-                        required value="40">
-                </div>
-                <div class="col-md-9"></div>
-                <div class="col-md-1 pad-1">
-                    <label class="label1">Moto</label>
-                </div>
-                <div class="col-md-2">
-                    <input class="entrada1" type="number" placeholder="Precio moto" min="0" max="1000" step="1" required
-                        value="35">
-                </div>
-                <div class="col-md-9"></div>
-                <div class="col-md-1 pad-1">
-                    <label class="label1">Bicicleta</label>
-                </div>
-                <div class="col-md-2">
-                    <input class="entrada1" type="number" placeholder="Precio bicicleta" min="0" max="1000" step="1"
-                        required value="20">
-                </div>
-                <div class="col-md-9"></div>
-                <div class="col-md-2">
-                    <input class="boton1" type="submit" value="Guardar cambios">
+        <h1 class="contenedor">Mira los vehiculos que se alojaron en tu parquiadero</h1>
 
-                </div>
-                <div class="col-md-9"></div>
-            </div>
-        </form>
+        <div id="contenedor" class="ag-theme-balham">
+
+
+        </div>
+        <br>
+        <p class="contenedor">Dinero recaudado hasta ahora: $120.000 </p>
+
 
     </section>
 

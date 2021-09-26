@@ -271,7 +271,7 @@
   width: 50px;
 }
 
-.precio1{
+.entrada1{
   margin-top: 15px;
   padding-left: 15px;
   padding-right: 10px;
@@ -284,6 +284,7 @@
 }
 .pad-1{
   padding-top: 15px;
+  height: auto;
 }
 .label1{
   margin-left: 100px;
@@ -303,6 +304,9 @@
   background-color: #1d1b31;
   color: #fff;
 }
+.boton1:hover{
+  background-color: gray;
+}
 
 @media screen and (max-width: 768px) {
   .contenedor{
@@ -315,7 +319,7 @@
   .label1{
     margin-left: 10px;
   }
-  .precio1{
+  .entrada1{
     margin-left: 10px;
     width: 100%;
   }

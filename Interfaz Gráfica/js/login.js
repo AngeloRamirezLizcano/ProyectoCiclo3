@@ -1,11 +1,11 @@
 function login() {
-  var user = document.getElementById("correo").value;
-  var password = document.getElementById("password").value;
-  console.log(user);
-  console.log(password);
+  let user = document.forms["formLogin"]["correo"].value;
+  let password = document.forms["formLogin"]["password"].value;
   if (user === "admin" && password === "admin123") {
-    console.log("Credenciales correctas");
-    window.location.href = "../Menu.html";
+    alert("Credenciales correctas");
+    window.location.href = "../Interfaz Gráfica/Menu-admin/index.html";
   } else {
+    alert("Usuario No encontrado");
   }
+  return false;
 }
