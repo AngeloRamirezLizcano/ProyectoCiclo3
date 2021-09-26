@@ -1,6 +1,11 @@
 [
-    {"modelo": "Toyota", "tiempoInicio": "am", "propietario": "Luis carlos pineda", "puesto": 33}
-    ,{"modelo": "Toyota", "tiempoInicio": "am", "propietario": "Luis carlos pineda", "puesto": 13}
-    ,{"modelo": "Toyota", "tiempoInicio": "am", "propietario": "Luis carlos pineda", "puesto": 3}
-    ,{"modelo": "Toyota", "tiempoInicio": "am", "propietario": "Luis carlos pineda", "puesto": 20}
+    {"modelo": "Toyota", "tiempoInicio": "am", "propietario": "Luis carlos pineda", "puesto": 33, "estado": ""}
+    ,{"modelo": "Toyota", "tiempoInicio": "am", "propietario": "Luis carlos pineda", "puesto": 13, "estado": ""}
+    ,{"modelo": "Toyota", "tiempoInicio": "am", "propietario": "Luis carlos pineda", "puesto": 3, "estado": ""}
+    ,{"modelo": "Toyota", "tiempoInicio": "am", "propietario": "Luis carlos pineda", "puesto": 20, "estado": ""}
+    
+    
+    
+
+    
 ]
