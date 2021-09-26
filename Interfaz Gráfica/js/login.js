@@ -3,7 +3,7 @@ function login() {
   let password = document.forms["formLogin"]["password"].value;
   if (user === "admin" && password === "admin123") {
     alert("Credenciales correctas");
-    window.location.href = "../Interfaz Gráfica/Menu-admin/index.html";
+    window.location.href = "../Menu-admin/index.html";
   } else {
     alert("Usuario No encontrado");
   }
