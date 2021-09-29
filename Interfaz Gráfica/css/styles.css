@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+  overflow-x: hidden;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background: #bdc6c9;  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.terminos {
+  font-family: "Roboto";
+  font-weight: 700;
+}
+
+.titulo1 {
+  font-weight: 600;
+}
+.margen1 {
+  background-color: white;
+  border-radius: 10px;
+  padding-top: 20px;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top: 60px;
+  width: 120%;
+}
+.row {
+  width: 101% !important;
+}
+
+.copy {
+  text-align: center;
+  color: rgb(5, 9, 66);
+}
+
+footer {
+  width: 100%;
+  margin-top: 5%;
+  bottom: 0;
+}
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.navbar-dark,
+.bg-dark {
+  background-color: #1d1b31 !important;
+}
+
+.principal {
+  display: flexbox;
+  justify-content: center;
+  justify-self: center;
+  align-content: center;
+  margin-top: 180px;
+  margin-bottom: 140px;
+}
+.principal2 {
+  display: flexbox;
+  justify-content: center;
+  justify-self: center;
+  align-content: center;
+  margin-top: 50px;
+}
+.center{
+  text-align: center;
+}
+
+@media (max-width: 725px) {
+ 
+}

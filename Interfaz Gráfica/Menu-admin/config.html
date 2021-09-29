@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-balham.css">
+    <title>AppParking</title>
+    <meta name="description" content="Aplicación para administrar parqueaderos" />
+    <link rel="shortcut icon" href="img/logo-02.png" />
+    <link rel="apple-touch-icon" href="img/logo-02.png" />
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <!-- <img src="Dogue.jpg" alt="profileImg"> -->
+            <i class='bx bxl-c-plus-plus icon'></i>
+            <!-- <img src="./images.jpg" alt=""> -->
+            <div class="logo_name">AppParking</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <i class='bx bx-search'></i>
+                <input type="text" placeholder="Buscar...">
+                <span class="tooltip">Buscar</span>
+            </li>
+            <li>
+                <a href="index.html">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name active">Dashboard</span>
+                </a>
+                <span class="tooltip">Dashboard</span>
+            </li>
+            <li>
+                <a href="usuario.html">
+                    <i class='bx bx-user'></i>
+                    <span class="links_name">Usuario</span>
+                </a>
+                <span class="tooltip">Usuario</span>
+            </li>
+            <li>
+                <a href="historicos.html">
+                    <i class='bx bx-pie-chart-alt-2'></i>
+                    <span class="links_name">Historicos</span>
+                </a>
+                <span class="tooltip">Historicos</span>
+            </li>
+            <li>
+                <a href="agregar.html">
+                    <i class='bx bxs-car'></i>
+                    <span class="links_name">Agregar vehiculos</span>
+                </a>
+                <span class="tooltip">Agregar vehiculos</span>
+            </li>
+            <li>
+                <a href="config.html">
+                    <i class='bx bx-slider-alt'></i>
+                    <span class="links_name">Configuraciones</span>
+                </a>
+                <span class="tooltip">Configuraciones</span>
+            </li>
+            <li>
+                <!-- <a href="#">
+         <i class='bx bx-cog' ></i>
+         <span class="links_name">Setting</span>
+       </a>
+       <span class="tooltip">Setting</span> -->
+            </li>
+            <li class="profile">
+                <div class="profile-details">
+                    <img src="img/Dogue.jpg" alt="profileImg">
+                    <div class="name_job">
+                        <div class="name">Juan</div>
+                        <div class="job">Admin</div>
+                    </div>
+                </div>
+                     <a href="../Iniciosesion.html"><i class='bx bx-log-out' id="log_out"></i></a>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <!-- esta parte el contenido que se quiere agregar -->
+        <div class="text">Configuraciones</div>
+
+        <h1 class="contenedor">Modifica el precio de cobro de cada uno de los tipos de vehiculos</h1>
+        <h5 class="contenedor">Precio por minuto</h5>
+        <form action="">
+            <div class="row">
+                <div class="col-md-1 pad-1">
+                    <label class="label1">Carro</label>
+                </div>
+                <div class="col-md-2">
+                    <input class="entrada1" type="number" placeholder="Precio carro" min="0" max="1000" step="1"
+                        required value="40">
+                </div>
+                <div class="col-md-9"></div>
+                <div class="col-md-1 pad-1">
+                    <label class="label1">Moto</label>
+                </div>
+                <div class="col-md-2">
+                    <input class="entrada1" type="number" placeholder="Precio moto" min="0" max="1000" step="1" required
+                        value="35">
+                </div>
+                <div class="col-md-9"></div>
+                <div class="col-md-1 pad-1">
+                    <label class="label1">Bicicleta</label>
+                </div>
+                <div class="col-md-2">
+                    <input class="entrada1" type="number" placeholder="Precio bicicleta" min="0" max="1000" step="1"
+                        required value="20">
+                </div>
+                <div class="col-md-9"></div>
+                <div class="col-md-2">
+                    <input class="boton1" type="submit" value="Guardar cambios">
+
+                </div>
+                <div class="col-md-9"></div>
+            </div>
+        </form>
+
+    </section>
+
+
+    <!-- Codigo personalizado -->
+
+    <!-- <section>
+      <div id="contenedor" style="width: 800px; height: 600px ; background: blue;">
+
+      </div> 
+    </section> -->
+
+
+
+
+
+
+
+
+
+
+    <!-- Fin del codigo personalizado -->
+
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        let searchBtn = document.querySelector(".bx-search");
+
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menuBtnChange();//calling the function(optional)
+        });
+
+        searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+            sidebar.classList.toggle("open");
+            menuBtnChange(); //calling the function(optional)
+        });
+
+        // following are the code to change sidebar button(optional)
+        function menuBtnChange() {
+            if (sidebar.classList.contains("open")) {
+                closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+            } else {
+                closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");//replacing the iocns class
+            }
+        }
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

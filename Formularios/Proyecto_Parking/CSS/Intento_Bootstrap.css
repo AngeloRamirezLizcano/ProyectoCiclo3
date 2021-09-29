@@ -1,0 +1,26 @@
+.root{
+    --color-blue-medium: ;
+}
+
+/*----Secciones-----*/
+/*----Navbar-----*/
+.navbar-main .active{
+    text-decoration: underline dotted;
+    text-decoration-style: solid;
+    text-decoration-color: orangered;
+    text-decoration-thickness: 15%;
+}
+/*----Estilo General-----*/
+a{
+    color:black;
+}
+a:hover{
+    color:white;
+    text-decoration: none;
+}
+button{
+    text-decoration-color:black;
+}
+.dropdown-menu .hover{
+    background-color: darkorange;
+}
