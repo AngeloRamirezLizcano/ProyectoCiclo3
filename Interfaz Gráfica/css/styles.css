@@ -17,10 +17,10 @@ body {
 }
 
 .titulo1 {
-  font-weight: 600;
+  font-weight: 1500;
 }
 .margen1 {
-  background-color: white;
+  background-color: #bdc6c9;  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   border-radius: 10px;
   padding-top: 20px;
   padding-left: 20%;
@@ -73,4 +73,15 @@ footer {
 
 @media (max-width: 725px) {
  
+}
+
+.navbar-main .active{
+  text-decoration: underline dotted;
+  text-decoration-style: solid;
+  text-decoration-color: orangered;
+  text-decoration-thickness: 15%;
+}
+
+hr{
+  height: 2px;
 }

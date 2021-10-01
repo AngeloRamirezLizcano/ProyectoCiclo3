@@ -19,7 +19,7 @@ class TotalPagar {
     this.eValue.innerHTML = this.cellValue;
 
     // add event listener to button
-    this.eventListener = () => alert(`${this.cellValue} El vehiculo ha sido retirado, gracias por visitar APPARKING`);
+    this.eventListener = () => confirm(`${this.cellValue} El vehiculo ha sido retirado, gracias por visitar APPARKING`);
     this.eButton.addEventListener('click', this.eventListener);
   }
 

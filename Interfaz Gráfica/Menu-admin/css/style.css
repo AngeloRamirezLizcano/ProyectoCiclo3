@@ -348,6 +348,22 @@
     
 }
 
+/*Estilos para ver perfil completo del usuario en una ventana Modal*/
+.entrada2{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 60%;
+  margin-left: 90px;
+  margin-right: 40px;
+  border:ridge;
+  border-color: grey;
+  list-style: circle;
+  outline: none;
+  height: 30px;
+  border-radius: 6px;
+}
 
 
 

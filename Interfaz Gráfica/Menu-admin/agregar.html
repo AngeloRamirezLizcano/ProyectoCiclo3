@@ -23,9 +23,9 @@
     <div class="sidebar">
         <div class="logo-details">
             <!-- <img src="Dogue.jpg" alt="profileImg"> -->
-            <i class='bx bxl-c-plus-plus icon'></i>
+            <img src="img/logo-02.png" class="icon">
             <!-- <img src="./images.jpg" alt=""> -->
-            <div class="logo_name">APParking</div>
+            <div class="logo_name">AppParking</div>
             <i class='bx bx-menu' id="btn"></i>
         </div>
         <ul class="nav-list">
@@ -84,7 +84,7 @@
                         <div class="job">Admin</div>
                     </div>
                 </div>
-                     <a href="../Iniciosesion.html"><i class='bx bx-log-out' id="log_out"></i></a>
+                     <a href="../Inicio_sesion.html"><i class='bx bx-log-out' id="log_out"></i></a>
             </li>
         </ul>
     </div>
@@ -98,29 +98,30 @@
                     <label for="nombre" class="form-label label1">Nombre</label>
                 </div>
                 <div class="col-md-2">
-                    <input type="text" class="form-control entrada1" id="nombre" placeholder="Nombre del propietario">
+                    <input type="text" class="entrada1" id="nombre" placeholder="Nombre del propietario" required>
                 </div>
                 <div class="col-md-7"></div>
                 <div class="col-md-3 pad-1">
-                    <label for="placa" class="form-label label1">Placa</label>
+                    <label for="placa" class="label1">Placa</label>
                 </div>
                 <div class="col-md-2">
-                    <input type="text" class="form-control entrada1" id="placa" placeholder="Placa del vehiculo">
+                    <input type="text" class="entrada1" id="placa" placeholder="Placa del vehiculo" required>
                 </div>
                 <div class="col-md-7"></div>
                 <div class="col-md-3 pad-1">
-                    <label for="modelo" class="form-label label1">Modelo</label>
+                    <label for="modelo" class="label1">Modelo</label>
                 </div>
                 <div class="col-md-2">
-                    <input type="text" class="form-control entrada1" id="modelo" placeholder="Modelo del vehiculo">
+                    <input type="text" class="entrada1" id="modelo" placeholder="Modelo del vehiculo" required>
                 </div>
 
                 <div class="col-md-7"></div>
                 <div class="col-md-3 pad-1">
-                    <label for="tipo_vehiculo" class="form-label label1">Tipo de Vehículo</label>
+                    <label for="tipo_vehiculo" class="label1">Tipo de Vehículo</label>
                 </div>
                 <div class="col-md-2">
-                    <select class="form-control form-control-lg entrada1" <option>Automóvil</option>
+                    <select class="entrada1" required>
+                        <option>Automóvil</option>
                         <option>Motocicleta</option>
                         <option>Bicicleta</option>
                     </select>

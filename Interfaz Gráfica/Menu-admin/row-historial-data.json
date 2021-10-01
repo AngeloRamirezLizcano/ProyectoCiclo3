@@ -1,0 +1,19 @@
+[
+     {"modelo": "Toyota", "Fecha": "2021-01-01", "propietario": "Walter Suarez","Estadia":"5", "Recaudo":"$10.000" }
+    ,{"modelo": "Ford", "Fecha": "2021-01-01", "propietario": "Juan Rojas","Estadia":"8", "Recaudo":"$13.000" }
+    ,{"modelo": "Kia", "Fecha": "2021-01-01", "propietario": "Juan Espitia","Estadia":"7.5", "Recaudo":"$12.500" }
+    ,{"modelo": "VolksWagen", "Fecha": "2021-01-01", "propietario": "Aldair Padilla","Estadia":"7", "Recaudo":"$11.750" }
+    ,{"modelo": "Kia", "Fecha": "2021-01-01", "propietario": "Jefferson Calderon","Estadia":"1.5", "Recaudo":"$4.000" }
+    ,{"modelo": "Volvo", "Fecha": "2021-01-01", "propietario": "Juan Pablo Hernandez","Estadia":"35", "Recaudo":"$74.000" }
+    ,{"modelo": "Mercedes Benz", "Fecha": "2021-01-01", "propietario": "Angelo Ramirez","Estadia":"25", "Recaudo":"$52.000" }
+    ,{"modelo": "BMW", "Fecha": "2021-01-01", "propietario": "Evelin Salazar","Estadia":"18", "Recaudo":"$32.000" }
+    ,{"modelo": "Hyundai", "Fecha": "2021-01-01", "propietario": "Darling Carrero","Estadia":"31", "Recaudo":"$68.000" }
+    ,{"modelo": "Renault", "Fecha": "2021-01-01", "propietario": "Carlos Acosta","Estadia":"21", "Recaudo":"$42.000" }
+    ,{"modelo": "Chevrolet", "Fecha": "2021-01-01", "propietario": "Waner Valencia","Estadia":"14", "Recaudo":"$28.000" }
+    ,{"modelo": "Mazda", "Fecha": "2021-01-01", "propietario": "Mayra Alejandra","Estadia":"48", "Recaudo":"$95.000" }
+    
+    
+    
+
+    
+]

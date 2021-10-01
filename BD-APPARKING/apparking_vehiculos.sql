@@ -16,33 +16,29 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `propietario`
+-- Table structure for table `vehiculos`
 --
 
-DROP TABLE IF EXISTS `propietario`;
+DROP TABLE IF EXISTS `vehiculos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `propietario` (
-  `ID` int unsigned NOT NULL,
-  `NOMBRES` varchar(50) NOT NULL,
-  `APELLIDOS` varchar(50) NOT NULL,
-  `CORREO_ELECTRONICO` varchar(70) NOT NULL,
-  `CONTRASEÑA` varchar(50) NOT NULL,
-  `CELULAR` varchar(50) NOT NULL,
+CREATE TABLE `vehiculos` (
   `PLACA` varchar(45) NOT NULL,
-  PRIMARY KEY (`ID`),
-  KEY `PLACA_idx` (`PLACA`),
-  CONSTRAINT `PLACA` FOREIGN KEY (`PLACA`) REFERENCES `vehiculo` (`PLACA`)
+  `TIPO_VEHICULO` varchar(50) NOT NULL,
+  `NOMBRES_PROPIETARIO` varchar(80) NOT NULL,
+  `MARCA` varchar(50) NOT NULL,
+  `MODELO` varchar(50) NOT NULL,
+  PRIMARY KEY (`PLACA`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `propietario`
+-- Dumping data for table `vehiculos`
 --
 
-LOCK TABLES `propietario` WRITE;
-/*!40000 ALTER TABLE `propietario` DISABLE KEYS */;
-/*!40000 ALTER TABLE `propietario` ENABLE KEYS */;
+LOCK TABLES `vehiculos` WRITE;
+/*!40000 ALTER TABLE `vehiculos` DISABLE KEYS */;
+/*!40000 ALTER TABLE `vehiculos` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -54,4 +50,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-09-14 23:06:39
+-- Dump completed on 2021-10-01  1:21:30
