@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css">
+    <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-balham.css">
+    <title>Apparking</title>
+    <meta name="description" content="Aplicación para administrar parqueaderos" />
+    <link rel="shortcut icon" href="img/logo-02.png" />
+    <link rel="apple-touch-icon" href="img/logo-02.png" />
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <!-- <img src="Dogue.jpg" alt="profileImg"> -->
+            <i class='bx bxl-c-plus-plus icon'></i>
+            <!-- <img src="./images.jpg" alt=""> -->
+            <div class="logo_name">APParking</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+      <li>
+        <i class='bx bx-search'></i>
+        <input type="text" placeholder="Buscar...">
+        <span class="tooltip">Buscar</span>
+      </li>
+      <li>
+        <a href="index.html">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name active">Dashboard</span>
+        </a>
+        <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+        <a href="usuario.html">
+          <i class='bx bx-user'></i>
+          <span class="links_name">Usuario</span>
+        </a>
+        <span class="tooltip">Usuario</span>
+      </li>
+      <li>
+        <a href="historicos.html">
+          <i class='bx bx-pie-chart-alt-2'></i>
+          <span class="links_name">Historicos</span>
+        </a>
+        <span class="tooltip">Historicos</span>
+      </li>
+      <li>
+        <a href="agregar.html">
+          <i class='bx bxs-car'></i>
+          <span class="links_name">Agregar vehiculos</span>
+        </a>
+        <span class="tooltip">Agregar vehiculos</span>
+      </li>
+      <li>
+        <a href="config.html">
+          <i class='bx bx-slider-alt'></i>
+          <span class="links_name">Configuraciones</span>
+        </a>
+        <span class="tooltip">Configuraciones</span>
+      </li>
+      <li>
+                <!-- <a href="#">
+   <i class='bx bx-cog' ></i>
+   <span class="links_name">Setting</span>
+ </a>
+ <span class="tooltip">Setting</span> -->
+            </li>
+            <li class="profile">
+                <div class="profile-details">
+                    <img src="img/Dogue.jpg" alt="profileImg">
+                    <div class="name_job">
+                        <div class="name">Juan</div>
+                        <div class="job">Admin</div>
+                    </div>
+                </div>
+                     <a href="../Iniciosesion.html"><i class='bx bx-log-out' id="log_out"></i></a>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <!-- esta parte el contenido que se quiere agregar -->
+        <div class="text">Registrar Vehiculo</div>
+        <h1 class="contenedor">Registra el ingreso de cada vehiculo</h1>
+        <form action="">
+            <div class="row">
+                <div class="col-md-3 pad-1">
+                    <label for="nombre" class="form-label label1">Nombre</label>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control entrada1" id="nombre" placeholder="Nombre del propietario">
+                </div>
+                <div class="col-md-7"></div>
+                <div class="col-md-3 pad-1">
+                    <label for="placa" class="form-label label1">Placa</label>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control entrada1" id="placa" placeholder="Placa del vehiculo">
+                </div>
+                <div class="col-md-7"></div>
+                <div class="col-md-3 pad-1">
+                    <label for="modelo" class="form-label label1">Modelo</label>
+                </div>
+                <div class="col-md-2">
+                    <input type="text" class="form-control entrada1" id="modelo" placeholder="Modelo del vehiculo">
+                </div>
+
+                <div class="col-md-7"></div>
+                <div class="col-md-3 pad-1">
+                    <label for="tipo_vehiculo" class="form-label label1">Tipo de Vehículo</label>
+                </div>
+                <div class="col-md-2">
+                    <select class="form-control form-control-lg entrada1" <option>Automóvil</option>
+                        <option>Motocicleta</option>
+                        <option>Bicicleta</option>
+                    </select>
+                </div>
+
+                <div class="col-md-7"></div>
+
+                <div class="col-md-2">
+                    <input class="boton1" type="submit" value="Registrar">
+                </div>
+                <div class="col-md-9"></div>
+            </div>
+        </form>
+
+    </section>
+
+
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        let searchBtn = document.querySelector(".bx-search");
+
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menuBtnChange();//calling the function(optional)
+        });
+
+        searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+            sidebar.classList.toggle("open");
+            menuBtnChange(); //calling the function(optional)
+        });
+
+        // following are the code to change sidebar button(optional)
+        function menuBtnChange() {
+            if (sidebar.classList.contains("open")) {
+                closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+            } else {
+                closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");//replacing the iocns class
+            }
+        }
+    </script>
+    <script src="/Menu-admin/js/funcionalidadBoton.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -10,13 +10,19 @@ body {
   font-family: "Roboto", sans-serif;
   background: #bdc6c9;
 }
-
+.centrar {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
 .form-register {
   width: 90%;
   max-width: 450px;
   background: white;
   padding: 40px;
-  margin: auto;
+  margin-left: 40px;
+  margin-right: 20px;
+
   margin-top: 80px;
   border-radius: 20px;
   font-family: "Roboto", sans-serif;
@@ -42,8 +48,8 @@ body {
 .form_input {
   width: 100%;
   background: none;
-  color: #5757577e;
-  font-size: 1rem;
+  color: #ecdddd7e;
+  font-size: 15px;
   padding: 0.6em 0.3em;
   border: none;
   outline: none;
@@ -68,9 +74,10 @@ body {
 }
 .btn {
   border-radius: 3px;
+  width: 100%;
   display: inline-block;
   font-size: 1rem;
-  padding: 13px 7.8em;
+  padding: 13px 5em;
   text-decoration: none;
   text-shadow: 0 1px 0 rgba(255 255 255 0.3);
   box-shadow: 5 10px 2px rgba(0 0 0 0.3);
@@ -96,7 +103,6 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 1px;
   background-color: #1cd8d2;
   transform: scale(0);
   transform: left bottom;
